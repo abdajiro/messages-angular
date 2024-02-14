@@ -1,0 +1,12 @@
+<h2> Messages </h2>
+<p-tabMenu [model]="alertTabs" [(activeItem)]="activeTab"></p-tabMenu>
+
+    <div *ngFor="let alertPanel of alertPanels">
+      <p-panel *ngIf="alertPanel.severity === activeTab.label" [header]="alertPanel.category" [toggleable]="true">
+        <div>Name: {{alertPanel.alertName}}</div>
+        <div>Description: {{alertPanel.description}}</div>
+        <div>Alert Level: {{alertPanel.severity}}</div>
+      </p-panel>
+    </div>
+  
+<!-- icons: Good Ware & Uniconlabs-->

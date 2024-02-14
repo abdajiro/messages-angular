@@ -1,0 +1,4 @@
+:host ::ng-deep .ui-tabmenu .ui-tabmenu-nav .ui-tabmenuitem.ui-state-active {
+    background-color: #d90096; 
+    border: 1px solid #d600d9;
+}
